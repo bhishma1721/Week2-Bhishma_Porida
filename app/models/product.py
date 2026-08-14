@@ -1,4 +1,4 @@
-from sqlalchemy import Column,Integer,String,ForeignKey
+from sqlalchemy import Column,Integer,String,ForeignKey,Boolean
 from app.db.base import Base
 from sqlalchemy.orm import relationship
 
@@ -11,6 +11,9 @@ class Product(Base):
     price = Column(Integer, nullable=False)
     available_quantity = Column(Integer,default=0,nullable=False)
     product_url = Column(String, nullable=True)
+
+    is_active = Column(Boolean, nullable=False, default=True)
+
     category_id = Column(
             Integer,
             ForeignKey("categories.id"),

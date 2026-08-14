@@ -10,6 +10,13 @@ class User(Base):
     password=Column(String,nullable=False)
     mobile=Column(String,nullable=False)
 
+    # Valid values: customer, admin, support
+    role = Column(
+        String(20),
+        nullable=False,
+        default="customer"
+    )
+
     cart_items = relationship(
         "CartItem",
         back_populates="user"

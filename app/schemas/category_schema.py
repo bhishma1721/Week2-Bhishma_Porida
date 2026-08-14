@@ -7,6 +7,9 @@ class CategoryRegister(BaseModel):
         max_length=100
     )
 
+class CategoryUpdate(CategoryRegister):
+    pass
+
 class CategoryResponse(BaseModel):
     id: int
     category_name: str

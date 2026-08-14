@@ -20,7 +20,7 @@ class OrderDetailResponse(BaseModel):
     order_id: int
     product_id: int
     quantity: int = Field(..., gt=0)
-    price: int = Field(..., ge=0)
+    price: float = Field(..., ge=0)
     class Config:
         orm_mode = True
 
@@ -30,7 +30,7 @@ class OrderHistoryResponse(BaseModel):
     user_id: int
     order_date: datetime
     payment_method: PaymentMethod
-    total_amount: int = Field(..., ge=0)
+    total_amount: float = Field(..., ge=0)
     class Config:
         orm_mode = True
 
@@ -40,7 +40,7 @@ class OrderResponse(BaseModel):
     user_id: int
     order_date: datetime
     payment_method: PaymentMethod
-    total_amount: int = Field(..., ge=0)
+    total_amount: float = Field(..., ge=0)
     details: list[OrderDetailResponse]
     class Config:
         orm_mode = True

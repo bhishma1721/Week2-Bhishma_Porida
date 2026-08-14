@@ -13,9 +13,21 @@ from app.schemas.order_schema import (
     OrderResponse
 )
 
+from app.routers.login_router import (
+    get_current_user,
+    require_roles
+)
+
 order_router = APIRouter()
 @order_router.post("/checkout",response_model=OrderResponse,tags=["Orders"])
-def checkout_order(request: OrderCheckout,db: Session = Depends(get_db)):
+async def checkout_order(request: OrderCheckout,db: Session = Depends(get_db),current_user: User = Depends(get_current_user)):
+    if request.user_id != current_user.id:
+        raise HTTPException(
+            status_code=403,
+            detail="You can place orders only for yourself"
+        )
+
+    user = current_user
     user = (
         db.query(User)
         .filter(User.id == request.user_id)
@@ -49,16 +61,18 @@ def checkout_order(request: OrderCheckout,db: Session = Depends(get_db)):
                 detail="Cart quantity must be greater than zero"
             )
 
+        #validating product , product must be exist and active
         product = (
             db.query(Product)
-            .filter(Product.id == cart_item.product_id)
+            .filter(Product.id == cart_item.product_id,
+                    Product.is_active.is_(True))
             .first()
         )
 
         if product is None:
             raise HTTPException(
                 status_code=404,
-                detail=f"Product {cart_item.product_id} not found"
+                detail=f"Product {cart_item.product_id} is unavailable and cannot be ordered"
             )
 
         products[product.id] = product
@@ -80,7 +94,7 @@ def checkout_order(request: OrderCheckout,db: Session = Depends(get_db)):
     total_amount = 0
     for product_id, quantity in product_quantities.items():
         product = products[product_id]
-        total_amount += product.price * quantity
+        total_amount += product.price * quantity #calculatinng the total order
     new_order = Order(
         user_id=request.user_id,
         order_date=datetime.utcnow(),
@@ -88,11 +102,11 @@ def checkout_order(request: OrderCheckout,db: Session = Depends(get_db)):
         total_amount=total_amount
     )
     db.add(new_order)
-    db.flush()
+    db.flush() #sends pending insert to db
 
     for product_id, quantity in product_quantities.items():
         product = products[product_id]
-        product.available_quantity -= quantity
+        product.available_quantity -= quantity #stock reducing
         new_order_detail = OrderDetail(
             order_id=new_order.id,
             product_id=product_id,
@@ -100,7 +114,7 @@ def checkout_order(request: OrderCheckout,db: Session = Depends(get_db)):
             price=product.price
         )
         db.add(new_order_detail)
-    for cart_item in cart_items:
+    for cart_item in cart_items: #deleting cart item after successfull creation
         db.delete(cart_item)
 
     db.commit()
@@ -111,37 +125,87 @@ def checkout_order(request: OrderCheckout,db: Session = Depends(get_db)):
 @order_router.get("/details/{order_id}",response_model=OrderResponse,tags=["Orders"])
 def get_order_details(
     order_id: int,
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
 ):
-
     order = (
         db.query(Order)
         .filter(Order.id == order_id)
         .first()
     )
+
     if order is None:
         raise HTTPException(
             status_code=404,
             detail="Order not found"
         )
+
+    if order.user_id != current_user.id:
+        raise HTTPException(
+            status_code=403,
+            detail="You can view only your own order"
+        )
+
     return order
 
-@order_router.get("/{user_id}",response_model=list[OrderHistoryResponse],tags=["Orders"])
-def get_order_history(user_id: int,db: Session = Depends(get_db)):
-    user = (
-        db.query(User)
-        .filter(User.id == user_id)
-        .first()
+@order_router.get(
+    "/operations/all",
+    response_model=list[OrderHistoryResponse],
+    tags=["Orders"]
+)
+def get_all_orders(
+    db: Session = Depends(get_db),
+    operator_user: User = Depends(
+        require_roles("admin", "support")
     )
-    if user is None:
-        raise HTTPException(
-            status_code=404,
-            detail="User not found"
-        )
-    orders = (
+):
+    return (
         db.query(Order)
-        .filter(Order.user_id == user_id)
         .order_by(Order.order_date.desc())
         .all()
     )
-    return orders
+
+@order_router.get(
+    "/operations/{order_id}",
+    response_model=OrderResponse,
+    tags=["Orders"]
+)
+def get_operation_order_details(
+    order_id: int,
+    db: Session = Depends(get_db),
+    operator_user: User = Depends(
+        require_roles("admin", "support")
+    )
+):
+    order = (
+        db.query(Order)
+        .filter(Order.id == order_id)
+        .first()
+    )
+
+    if order is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Order not found"
+        )
+
+    return order
+
+@order_router.get("/{user_id}",response_model=list[OrderHistoryResponse],tags=["Orders"])
+def get_order_history(
+    user_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
+    if user_id != current_user.id:
+        raise HTTPException(
+            status_code=403,
+            detail="You can view only your own order history"
+        )
+
+    return (
+        db.query(Order)
+        .filter(Order.user_id == current_user.id)
+        .order_by(Order.order_date.desc())
+        .all()
+    )

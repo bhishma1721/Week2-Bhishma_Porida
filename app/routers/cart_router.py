@@ -7,6 +7,8 @@ from app.models.product import Product
 from app.models.user import User
 from app.models.category import Category    #not used
 
+from app.routers.login_router import get_current_user
+
 from fastapi.params import Depends
 from sqlalchemy.orm import Session,joinedload
 
@@ -26,7 +28,14 @@ def get_cart_item(cart_item_id: int, db: Session):
     )
 
 @cart_router.post('/add',response_model=list[CartItemResponse],tags=["Carts"])
-def add_to_cart(request: CartAddRequest,db:Session=Depends(get_db)):
+def add_to_cart(request: CartAddRequest,db:Session=Depends(get_db),current_user: User = Depends(get_current_user)):
+    if request.user_id != current_user.id:
+        raise HTTPException(
+            status_code=403,
+            detail="You can manage only your own cart"
+        )
+
+    user = current_user
     user = (
         db.query(User)
         .filter(User.id == request.user_id)
@@ -77,18 +86,12 @@ def add_to_cart(request: CartAddRequest,db:Session=Depends(get_db)):
     return [get_cart_item(cart_item.id, db)]
 
 
-@cart_router.get("/{user_id}",response_model=list[CartItemResponse],tags=['Carts'])
-def view_cart(user_id: int,db: Session = Depends(get_db)):
-    user = (
-        db.query(User)
-        .filter(User.id == user_id)
-        .first()
-    )
-
-    if user is None:
+@cart_router.get("/{user_id}",response_model=list[CartItemResponse],tags=["Carts"])
+def view_cart(user_id: int,db: Session = Depends(get_db),current_user: User = Depends(get_current_user)):
+    if user_id != current_user.id: # here it is checking the ownership
         raise HTTPException(
-            status_code=404,
-            detail="User not found"
+            status_code=403,
+            detail="You can view only your own cart"
         )
 
     return (
@@ -97,12 +100,12 @@ def view_cart(user_id: int,db: Session = Depends(get_db)):
             joinedload(CartItem.product)
             .joinedload(Product.category)
         )
-        .filter(CartItem.user_id == user_id)
+        .filter(CartItem.user_id == current_user.id)
         .all()
     )
 
-@cart_router.delete("/remove/{cart_item_id}",tags=['Carts'])
-def remove_from_cart(cart_item_id: int,db: Session = Depends(get_db)):
+@cart_router.delete("/remove/{cart_item_id}",tags=["Carts"])
+def remove_from_cart(cart_item_id: int,db: Session = Depends(get_db),current_user: User = Depends(get_current_user)):
     cart_item = (
         db.query(CartItem)
         .filter(CartItem.id == cart_item_id)
@@ -113,6 +116,12 @@ def remove_from_cart(cart_item_id: int,db: Session = Depends(get_db)):
         raise HTTPException(
             status_code=404,
             detail="Cart item not found"
+        )
+
+    if cart_item.user_id != current_user.id:
+        raise HTTPException(
+            status_code=403,
+            detail="You can remove only your own cart item"
         )
 
     db.delete(cart_item)
@@ -124,7 +133,12 @@ def remove_from_cart(cart_item_id: int,db: Session = Depends(get_db)):
 
 
 @cart_router.put("/update/{cart_item_id}",response_model=CartItemResponse,tags=["Carts"])
-def update_cart_quantity(cart_item_id: int,request: CartUpdateRequest,db: Session = Depends(get_db)):
+def update_cart_quantity(
+    cart_item_id: int,
+    request: CartUpdateRequest,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user)
+):
     cart_item = (
         db.query(CartItem)
         .filter(CartItem.id == cart_item_id)
@@ -135,6 +149,12 @@ def update_cart_quantity(cart_item_id: int,request: CartUpdateRequest,db: Sessio
         raise HTTPException(
             status_code=404,
             detail="Cart item not found"
+        )
+
+    if cart_item.user_id != current_user.id:
+        raise HTTPException(
+            status_code=403,
+            detail="You can update only your own cart item"
         )
 
     product = (

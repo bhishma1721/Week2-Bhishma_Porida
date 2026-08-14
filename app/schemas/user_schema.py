@@ -11,6 +11,7 @@ class UserResponse(BaseModel):
     name: str
     email: EmailStr
     mobile: str
+    role: str
 
     class Config:
         orm_mode = True
@@ -22,3 +23,7 @@ class UserLogin(BaseModel):
 class LoginResponse(BaseModel):
     message: str
     user: UserResponse
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str

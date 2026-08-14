@@ -7,7 +7,10 @@ class ProductRegister(BaseModel):
     price:int=Field(...,gt=0)
     available_quantity:int=Field(ge=0)
     product_url:str |None=Field(default=None,max_length=200)
-    category_id:int
+    category_id:int= Field(..., gt=0)
+
+class ProductUpdate(ProductRegister):
+    pass
 
 class ProductResponse(BaseModel):
     id: int
@@ -17,6 +20,7 @@ class ProductResponse(BaseModel):
     price: int
     available_quantity: int
     product_url:str| None=None
+    is_active: bool
     category: CategoryResponse| None=None
 
     class Config:

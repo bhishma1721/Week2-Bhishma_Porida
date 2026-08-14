@@ -1,0 +1,279 @@
+2026-08-13 15:04:33,150 | INFO | online-shopping-api | request_completed request_id=0b24fcfb-f23a-4f3c-8643-4824378da446 method=GET path=/docs status_code=200 duration_ms=0.27
+2026-08-13 15:04:35,073 | INFO | online-shopping-api | request_completed request_id=1bcbffc3-a103-4375-8dd1-be34bc139fb7 method=GET path=/openapi.json status_code=200 duration_ms=97.44
+2026-08-13 15:05:01,429 | INFO | online-shopping-api | request_completed request_id=ec04365c-32b8-4621-b0a9-d39900478de6 method=GET path=/products/product status_code=200 duration_ms=21.78
+2026-08-13 15:05:52,641 | INFO | online-shopping-api | request_completed request_id=2b803777-06ef-4b70-b6b6-1c0c964c654a method=POST path=/auth/login status_code=200 duration_ms=371.48
+2026-08-13 15:06:08,783 | WARNING | online-shopping-api | http_error request_id=5601a1cc-9fa6-4231-86f0-d595404a4dbf method=POST path=/categories/category/create status_code=403 detail=Insufficient role permissions
+2026-08-13 15:06:08,784 | INFO | online-shopping-api | request_completed request_id=5601a1cc-9fa6-4231-86f0-d595404a4dbf method=POST path=/categories/category/create status_code=403 duration_ms=18.09
+2026-08-13 15:07:08,196 | WARNING | online-shopping-api | http_error request_id=93fdbab2-31da-4c99-b713-2f52e52d072d method=POST path=/orders/checkout status_code=400 detail=Cart is empty
+2026-08-13 15:07:08,196 | INFO | online-shopping-api | request_completed request_id=93fdbab2-31da-4c99-b713-2f52e52d072d method=POST path=/orders/checkout status_code=400 duration_ms=9.72
+2026-08-13 17:30:12,819 | INFO | online-shopping-api | request_completed request_id=2024c53f-0d15-4621-986e-47b93e51d1cc method=GET path=/ status_code=200 duration_ms=1.96
+2026-08-13 17:30:13,194 | INFO | online-shopping-api | request_completed request_id=c23b4abc-b5b9-4ade-a574-e7c99bd69cf6 method=POST path=/users/register status_code=200 duration_ms=359.87
+2026-08-13 17:30:13,449 | INFO | online-shopping-api | request_completed request_id=4051e415-a87f-4cb0-81d3-ccf17571affe method=POST path=/users/register status_code=200 duration_ms=245.13
+2026-08-13 17:30:13,452 | WARNING | online-shopping-api | http_error request_id=e844e957-3bc7-4c4a-877a-05b00c73203a method=POST path=/users/register status_code=404 detail=Email is already registered
+2026-08-13 17:30:13,453 | INFO | online-shopping-api | request_completed request_id=e844e957-3bc7-4c4a-877a-05b00c73203a method=POST path=/users/register status_code=404 duration_ms=2.22
+2026-08-13 17:30:13,697 | INFO | online-shopping-api | request_completed request_id=7c73d1ef-ab3b-4b8e-9eb4-ab80757d629c method=POST path=/users/register status_code=200 duration_ms=236.83
+2026-08-13 17:30:13,968 | INFO | online-shopping-api | request_completed request_id=0d5a8f43-d648-430a-bfdb-62793f9b76ea method=POST path=/auth/login status_code=200 duration_ms=269.50
+2026-08-13 17:30:14,222 | INFO | online-shopping-api | request_completed request_id=dbbdd10e-51ec-411a-ab65-45e0f112fdd3 method=POST path=/users/register status_code=200 duration_ms=238.79
+2026-08-13 17:30:14,459 | WARNING | online-shopping-api | http_error request_id=b7b4ff46-409b-4e5c-8a60-8ceb1d789ad4 method=POST path=/auth/login status_code=401 detail=Invalid password
+2026-08-13 17:30:14,459 | INFO | online-shopping-api | request_completed request_id=b7b4ff46-409b-4e5c-8a60-8ceb1d789ad4 method=POST path=/auth/login status_code=401 duration_ms=235.83
+2026-08-13 17:30:14,470 | WARNING | online-shopping-api | http_error request_id=8db0e3f5-8176-4959-bb34-b8da877bd588 method=POST path=/auth/login status_code=404 detail=User not found
+2026-08-13 17:30:14,470 | INFO | online-shopping-api | request_completed request_id=8db0e3f5-8176-4959-bb34-b8da877bd588 method=POST path=/auth/login status_code=404 duration_ms=3.64
+2026-08-13 17:30:14,496 | WARNING | online-shopping-api | http_error request_id=fbb29317-9ec8-4cfe-8eaa-19ecda8b00e5 method=GET path=/cart/1 status_code=401 detail=Invalid authentication credentials
+2026-08-13 17:30:14,496 | INFO | online-shopping-api | request_completed request_id=fbb29317-9ec8-4cfe-8eaa-19ecda8b00e5 method=GET path=/cart/1 status_code=401 duration_ms=15.39
+2026-08-13 17:57:15,829 | INFO | online-shopping-api | request_completed request_id=b87b8fc1-8213-4ed3-bdd3-907d14b4cd12 method=GET path=/products/product status_code=200 duration_ms=11.59
+2026-08-13 17:57:15,844 | INFO | online-shopping-api | request_completed request_id=f9fdc325-4272-48bc-a0b8-1b61f68bca30 method=GET path=/products/product/1 status_code=200 duration_ms=2.62
+2026-08-13 17:57:15,854 | WARNING | online-shopping-api | http_error request_id=9461ba8d-2404-4cf1-947d-6b0b24af7df0 method=GET path=/products/product/99999 status_code=404 detail=Product not found
+2026-08-13 17:57:15,855 | INFO | online-shopping-api | request_completed request_id=9461ba8d-2404-4cf1-947d-6b0b24af7df0 method=GET path=/products/product/99999 status_code=404 duration_ms=2.03
+2026-08-13 17:57:15,871 | INFO | online-shopping-api | request_completed request_id=7f33a995-b15c-4d3f-9404-e51df601e217 method=GET path=/products/product/search status_code=200 duration_ms=3.75
+2026-08-13 17:57:15,886 | INFO | online-shopping-api | request_completed request_id=aae440af-8899-4014-b8c7-2a8a60190748 method=GET path=/products/product/search status_code=200 duration_ms=1.91
+2026-08-13 17:57:15,899 | WARNING | online-shopping-api | http_error request_id=e2347349-9ac3-4413-8018-bdd54c252b62 method=GET path=/products/product/search status_code=404 detail=No products found
+2026-08-13 17:57:15,899 | INFO | online-shopping-api | request_completed request_id=e2347349-9ac3-4413-8018-bdd54c252b62 method=GET path=/products/product/search status_code=404 duration_ms=2.59
+2026-08-13 17:57:16,363 | INFO | online-shopping-api | request_completed request_id=4da5c44e-9125-408d-89b6-dd87149b5a66 method=POST path=/auth/login status_code=200 duration_ms=208.66
+2026-08-13 17:57:16,371 | INFO | online-shopping-api | request_completed request_id=e4290537-903d-4a66-98ed-96b48d2d51f5 method=POST path=/products/products/create status_code=200 duration_ms=5.84
+2026-08-13 17:57:16,975 | INFO | online-shopping-api | request_completed request_id=b2e28ead-2c06-4aac-b6ce-8cbf55238eb9 method=POST path=/auth/login status_code=200 duration_ms=354.50
+2026-08-13 17:57:16,979 | WARNING | online-shopping-api | http_error request_id=5d13db2f-bc5a-42a3-b592-1dfe9fe36c8c method=POST path=/products/products/create status_code=403 detail=Insufficient role permissions
+2026-08-13 17:57:16,980 | INFO | online-shopping-api | request_completed request_id=5d13db2f-bc5a-42a3-b592-1dfe9fe36c8c method=POST path=/products/products/create status_code=403 duration_ms=2.64
+2026-08-13 17:57:17,490 | INFO | online-shopping-api | request_completed request_id=454a697b-17c7-4fe4-a406-c03154c95a67 method=POST path=/auth/login status_code=200 duration_ms=206.19
+2026-08-13 17:57:17,496 | INFO | online-shopping-api | request_completed request_id=ecc49e9a-a76f-49b1-8892-73e984d8d8b0 method=POST path=/products/products/create status_code=200 duration_ms=3.88
+2026-08-13 17:57:17,499 | WARNING | online-shopping-api | http_error request_id=76dd888d-63cd-4657-b07c-11f5a241cf35 method=POST path=/products/products/create status_code=409 detail=Product name is already registered
+2026-08-13 17:57:17,500 | INFO | online-shopping-api | request_completed request_id=76dd888d-63cd-4657-b07c-11f5a241cf35 method=POST path=/products/products/create status_code=409 duration_ms=2.67
+2026-08-13 17:57:18,006 | INFO | online-shopping-api | request_completed request_id=7e782fdc-60eb-4de1-9656-bcc864b83ac4 method=POST path=/auth/login status_code=200 duration_ms=241.58
+2026-08-13 17:57:18,014 | INFO | online-shopping-api | request_completed request_id=4a31ad29-de7e-47b7-9d59-ccd4cf22d061 method=PUT path=/products/products/update/1 status_code=200 duration_ms=5.61
+2026-08-13 17:57:18,493 | INFO | online-shopping-api | request_completed request_id=6788a85a-f970-46bb-b0bc-3d3c98b16257 method=POST path=/auth/login status_code=200 duration_ms=238.77
+2026-08-13 17:57:18,498 | INFO | online-shopping-api | request_completed request_id=f29dc814-a95d-4b8c-8699-0126de49a702 method=DELETE path=/products/products/deactivate/1 status_code=200 duration_ms=3.29
+2026-08-13 17:57:18,502 | WARNING | online-shopping-api | http_error request_id=efa02ae3-89ad-4bb2-a961-1fa37781654c method=GET path=/products/product/1 status_code=404 detail=Product not found
+2026-08-13 17:57:18,503 | INFO | online-shopping-api | request_completed request_id=efa02ae3-89ad-4bb2-a961-1fa37781654c method=GET path=/products/product/1 status_code=404 duration_ms=1.72
+2026-08-13 17:59:38,016 | INFO | online-shopping-api | request_completed request_id=65f4b8d5-a2ec-4157-82f6-0e4ee38e941a method=GET path=/categories/category/list status_code=200 duration_ms=8.41
+2026-08-13 17:59:38,506 | INFO | online-shopping-api | request_completed request_id=001e14e9-7100-4d70-a4a7-2d58745a860c method=POST path=/auth/login status_code=200 duration_ms=228.06
+2026-08-13 17:59:38,512 | INFO | online-shopping-api | request_completed request_id=715a1161-ea11-4e1d-b8fd-2dc65b8f99c5 method=POST path=/categories/category/create status_code=200 duration_ms=3.94
+2026-08-13 17:59:38,944 | INFO | online-shopping-api | request_completed request_id=3e1155eb-625b-4495-9d63-7464577c7ecb method=POST path=/auth/login status_code=200 duration_ms=215.47
+2026-08-13 17:59:38,948 | WARNING | online-shopping-api | http_error request_id=a49fe6a5-69eb-45db-835c-5cae27621fd9 method=POST path=/categories/category/create status_code=403 detail=Insufficient role permissions
+2026-08-13 17:59:38,948 | INFO | online-shopping-api | request_completed request_id=a49fe6a5-69eb-45db-835c-5cae27621fd9 method=POST path=/categories/category/create status_code=403 duration_ms=2.51
+2026-08-13 17:59:39,395 | INFO | online-shopping-api | request_completed request_id=cf937fa9-985b-4ead-8341-5e8beba7989c method=POST path=/auth/login status_code=200 duration_ms=215.23
+2026-08-13 17:59:39,401 | INFO | online-shopping-api | request_completed request_id=7d81fcc8-2372-4347-9c2f-e301aa0c89db method=POST path=/categories/category/create status_code=200 duration_ms=4.02
+2026-08-13 17:59:39,404 | WARNING | online-shopping-api | http_error request_id=0c5d01f9-7cae-4715-98dd-7f36598f4bd9 method=POST path=/categories/category/create status_code=404 detail=Category is already registered
+2026-08-13 17:59:39,404 | INFO | online-shopping-api | request_completed request_id=0c5d01f9-7cae-4715-98dd-7f36598f4bd9 method=POST path=/categories/category/create status_code=404 duration_ms=2.25
+2026-08-13 17:59:39,860 | INFO | online-shopping-api | request_completed request_id=76224a34-e834-43ae-883f-de631c355ecc method=POST path=/auth/login status_code=200 duration_ms=211.12
+2026-08-13 17:59:39,868 | INFO | online-shopping-api | request_completed request_id=7babb0e4-1371-4ba0-bb5e-04032bc5a313 method=PUT path=/categories/category/update/1 status_code=200 duration_ms=5.35
+2026-08-13 17:59:40,322 | INFO | online-shopping-api | request_completed request_id=edaba631-ff70-490f-9994-2e386f4cae51 method=POST path=/auth/login status_code=200 duration_ms=227.91
+2026-08-13 17:59:40,327 | WARNING | online-shopping-api | http_error request_id=c48cbf65-760c-44d1-9bd2-13ecb5f6c8ed method=PUT path=/categories/category/update/1 status_code=403 detail=Insufficient role permissions
+2026-08-13 17:59:40,328 | INFO | online-shopping-api | request_completed request_id=c48cbf65-760c-44d1-9bd2-13ecb5f6c8ed method=PUT path=/categories/category/update/1 status_code=403 duration_ms=3.22
+2026-08-13 17:59:40,836 | INFO | online-shopping-api | request_completed request_id=b93be7c0-0053-43b4-8cf9-c9fd2a384b93 method=POST path=/auth/login status_code=200 duration_ms=235.09
+2026-08-13 17:59:40,842 | WARNING | online-shopping-api | http_error request_id=f0b63f7f-317d-498f-8cf7-38dbf5114dff method=PUT path=/categories/category/update/1 status_code=409 detail=Category is already registered
+2026-08-13 17:59:40,843 | INFO | online-shopping-api | request_completed request_id=f0b63f7f-317d-498f-8cf7-38dbf5114dff method=PUT path=/categories/category/update/1 status_code=409 duration_ms=4.04
+2026-08-13 17:59:41,318 | INFO | online-shopping-api | request_completed request_id=be07e366-a774-4a7f-9f42-d5404fcaf55d method=POST path=/auth/login status_code=200 duration_ms=251.08
+2026-08-13 17:59:41,323 | WARNING | online-shopping-api | http_error request_id=5ecae485-ca4d-4292-8950-0082d7974a2a method=PUT path=/categories/category/update/99999 status_code=404 detail=Category not found
+2026-08-13 17:59:41,323 | INFO | online-shopping-api | request_completed request_id=5ecae485-ca4d-4292-8950-0082d7974a2a method=PUT path=/categories/category/update/99999 status_code=404 duration_ms=3.00
+2026-08-13 17:59:41,746 | INFO | online-shopping-api | request_completed request_id=ce51189c-4ca7-4c9c-8d0e-aeebaf4a062b method=POST path=/auth/login status_code=200 duration_ms=209.95
+2026-08-13 17:59:41,750 | INFO | online-shopping-api | request_completed request_id=9484902a-6b95-4a93-9620-59a0970f841a method=POST path=/categories/category/create status_code=422 duration_ms=2.37
+2026-08-13 18:04:37,557 | INFO | online-shopping-api | request_completed request_id=bfb58d3e-2d9d-4899-b784-1367c6531228 method=POST path=/auth/login status_code=200 duration_ms=231.74
+2026-08-13 18:04:37,594 | INFO | online-shopping-api | request_completed request_id=8901bdd9-eec5-47d1-b21a-4733da97eeb1 method=POST path=/cart/add status_code=200 duration_ms=33.96
+2026-08-13 18:04:38,228 | INFO | online-shopping-api | request_completed request_id=0dccc314-620e-4869-9f5b-ac2bcfa9a40b method=POST path=/auth/login status_code=200 duration_ms=392.14
+2026-08-13 18:04:38,240 | INFO | online-shopping-api | request_completed request_id=e6b18053-db5c-430e-8b64-9bab8f87fde5 method=POST path=/cart/add status_code=200 duration_ms=8.21
+2026-08-13 18:04:38,253 | INFO | online-shopping-api | request_completed request_id=7442afac-c48f-487f-addd-89940ed67b00 method=POST path=/cart/add status_code=200 duration_ms=9.36
+2026-08-13 18:04:38,756 | INFO | online-shopping-api | request_completed request_id=2b34235d-438e-4907-8dbd-7e7bd5153cdc method=POST path=/auth/login status_code=200 duration_ms=230.26
+2026-08-13 18:04:38,760 | WARNING | online-shopping-api | http_error request_id=ac7b3b0d-49b4-4657-a6d5-8a59d8457df0 method=POST path=/cart/add status_code=400 detail=Requested quantity exceeds available stock
+2026-08-13 18:04:38,760 | INFO | online-shopping-api | request_completed request_id=ac7b3b0d-49b4-4657-a6d5-8a59d8457df0 method=POST path=/cart/add status_code=400 duration_ms=2.95
+2026-08-13 18:04:39,430 | INFO | online-shopping-api | request_completed request_id=a972ccfc-1351-475a-b0a0-a07182949f63 method=POST path=/auth/login status_code=200 duration_ms=215.10
+2026-08-13 18:04:39,435 | WARNING | online-shopping-api | http_error request_id=41336fad-60ef-416d-b6a4-ef39562d916a method=POST path=/cart/add status_code=403 detail=You can manage only your own cart
+2026-08-13 18:04:39,435 | INFO | online-shopping-api | request_completed request_id=41336fad-60ef-416d-b6a4-ef39562d916a method=POST path=/cart/add status_code=403 duration_ms=2.53
+2026-08-13 18:04:39,915 | INFO | online-shopping-api | request_completed request_id=823227b1-509e-483f-8e2a-117c03f3ee9b method=POST path=/auth/login status_code=200 duration_ms=212.29
+2026-08-13 18:04:39,923 | INFO | online-shopping-api | request_completed request_id=6d88b2ac-d60a-4051-8ffd-f829973ff0fd method=GET path=/cart/1 status_code=200 duration_ms=5.92
+2026-08-13 18:04:40,599 | INFO | online-shopping-api | request_completed request_id=d4b804c6-99ef-4b18-b2b8-c22562fc1fbe method=POST path=/auth/login status_code=200 duration_ms=251.55
+2026-08-13 18:04:40,604 | WARNING | online-shopping-api | http_error request_id=a5db0adc-323f-46b1-91ea-a0b9605100cf method=GET path=/cart/2 status_code=403 detail=You can view only your own cart
+2026-08-13 18:04:40,605 | INFO | online-shopping-api | request_completed request_id=a5db0adc-323f-46b1-91ea-a0b9605100cf method=GET path=/cart/2 status_code=403 duration_ms=3.14
+2026-08-13 18:04:41,047 | INFO | online-shopping-api | request_completed request_id=4d1799bc-f265-4654-a370-25ba4e969953 method=POST path=/auth/login status_code=200 duration_ms=219.97
+2026-08-13 18:04:41,066 | INFO | online-shopping-api | request_completed request_id=a53f91e2-d740-4e81-a1a6-1bd0fdb759ee method=PUT path=/cart/update/1 status_code=200 duration_ms=7.97
+2026-08-13 18:04:41,510 | INFO | online-shopping-api | request_completed request_id=6a103f91-0014-4b6a-ad10-e1b5e7a581fc method=POST path=/auth/login status_code=200 duration_ms=226.10
+2026-08-13 18:04:41,521 | WARNING | online-shopping-api | http_error request_id=7423e492-c877-4902-b1f6-ffd70e08c069 method=PUT path=/cart/update/1 status_code=400 detail=Requested quantity exceeds available stock
+2026-08-13 18:04:41,522 | INFO | online-shopping-api | request_completed request_id=7423e492-c877-4902-b1f6-ffd70e08c069 method=PUT path=/cart/update/1 status_code=400 duration_ms=7.25
+2026-08-13 18:04:42,196 | INFO | online-shopping-api | request_completed request_id=fffc6406-4fea-4629-b489-cae9258ac623 method=POST path=/auth/login status_code=200 duration_ms=219.65
+2026-08-13 18:04:42,202 | WARNING | online-shopping-api | http_error request_id=92c3147b-96e4-411d-8d40-e3f7970cfd16 method=PUT path=/cart/update/1 status_code=403 detail=You can update only your own cart item
+2026-08-13 18:04:42,202 | INFO | online-shopping-api | request_completed request_id=92c3147b-96e4-411d-8d40-e3f7970cfd16 method=PUT path=/cart/update/1 status_code=403 duration_ms=4.45
+2026-08-13 18:04:42,644 | INFO | online-shopping-api | request_completed request_id=a26f7974-e2ed-4544-a087-fecd831c2049 method=POST path=/auth/login status_code=200 duration_ms=223.26
+2026-08-13 18:04:42,649 | INFO | online-shopping-api | request_completed request_id=7aeb99c6-9a7a-40f4-8e95-e6c6e9f13843 method=DELETE path=/cart/remove/1 status_code=200 duration_ms=3.17
+2026-08-13 18:04:43,399 | INFO | online-shopping-api | request_completed request_id=da82535c-0d6f-40f6-a576-1dda1c70638a method=POST path=/auth/login status_code=200 duration_ms=228.94
+2026-08-13 18:04:43,403 | WARNING | online-shopping-api | http_error request_id=afdd8e70-12a0-4d57-af00-7106e0c73481 method=DELETE path=/cart/remove/1 status_code=403 detail=You can remove only your own cart item
+2026-08-13 18:04:43,403 | INFO | online-shopping-api | request_completed request_id=afdd8e70-12a0-4d57-af00-7106e0c73481 method=DELETE path=/cart/remove/1 status_code=403 duration_ms=2.15
+2026-08-13 18:04:43,411 | WARNING | online-shopping-api | http_error request_id=65d8a612-8b82-4907-a26e-e1f0300d0aa1 method=GET path=/cart/1 status_code=401 detail=Not authenticated
+2026-08-13 18:04:43,411 | INFO | online-shopping-api | request_completed request_id=65d8a612-8b82-4907-a26e-e1f0300d0aa1 method=GET path=/cart/1 status_code=401 duration_ms=1.13
+2026-08-13 18:06:48,441 | INFO | online-shopping-api | request_completed request_id=a57662e1-7b28-4b49-831f-c36477550d90 method=POST path=/auth/login status_code=200 duration_ms=250.80
+2026-08-13 18:06:48,465 | INFO | online-shopping-api | request_completed request_id=bc77d615-6ab6-47d8-b193-85457134c8fd method=POST path=/orders/checkout status_code=200 duration_ms=21.46
+2026-08-13 18:06:49,031 | INFO | online-shopping-api | request_completed request_id=48d55667-6d09-44b0-a6aa-60e244c2a619 method=POST path=/auth/login status_code=200 duration_ms=293.05
+2026-08-13 18:06:49,035 | WARNING | online-shopping-api | http_error request_id=c5ee1444-8a61-4954-a034-4ba42d43891c method=POST path=/orders/checkout status_code=400 detail=Cart is empty
+2026-08-13 18:06:49,036 | INFO | online-shopping-api | request_completed request_id=c5ee1444-8a61-4954-a034-4ba42d43891c method=POST path=/orders/checkout status_code=400 duration_ms=3.38
+2026-08-13 18:06:49,537 | INFO | online-shopping-api | request_completed request_id=905f09b4-5510-4490-a9c8-904ac7ce6e66 method=POST path=/auth/login status_code=200 duration_ms=244.05
+2026-08-13 18:06:49,542 | WARNING | online-shopping-api | http_error request_id=d6c51514-37d4-49e5-8df7-4df9ce5d1db5 method=POST path=/orders/checkout status_code=400 detail=Insufficient stock for product 1. Available quantity: 1
+2026-08-13 18:06:49,542 | INFO | online-shopping-api | request_completed request_id=d6c51514-37d4-49e5-8df7-4df9ce5d1db5 method=POST path=/orders/checkout status_code=400 duration_ms=3.80
+2026-08-13 18:06:50,051 | INFO | online-shopping-api | request_completed request_id=be4d4c2a-91ff-4e77-82ed-60fb0160f0bd method=POST path=/auth/login status_code=200 duration_ms=261.30
+2026-08-13 18:06:50,055 | WARNING | online-shopping-api | http_error request_id=0ef52add-2bef-44bc-b7a2-cabf3b13d8b9 method=POST path=/orders/checkout status_code=404 detail=Product 1 is unavailable and cannot be ordered
+2026-08-13 18:06:50,056 | INFO | online-shopping-api | request_completed request_id=0ef52add-2bef-44bc-b7a2-cabf3b13d8b9 method=POST path=/orders/checkout status_code=404 duration_ms=3.30
+2026-08-13 18:06:50,832 | INFO | online-shopping-api | request_completed request_id=629b536c-d2b7-4ba4-8b49-b2d167fc3105 method=POST path=/auth/login status_code=200 duration_ms=261.56
+2026-08-13 18:06:50,835 | WARNING | online-shopping-api | http_error request_id=6f7c1d2a-eb49-4821-a4f9-3a5b0cd993a1 method=POST path=/orders/checkout status_code=403 detail=You can place orders only for yourself
+2026-08-13 18:06:50,836 | INFO | online-shopping-api | request_completed request_id=6f7c1d2a-eb49-4821-a4f9-3a5b0cd993a1 method=POST path=/orders/checkout status_code=403 duration_ms=2.15
+2026-08-13 18:06:51,332 | INFO | online-shopping-api | request_completed request_id=a621264b-9b21-4edd-a51a-b8db3cb13741 method=POST path=/auth/login status_code=200 duration_ms=240.83
+2026-08-13 18:06:51,337 | INFO | online-shopping-api | request_completed request_id=66a7b272-4352-41ce-bdc1-ff6d247d8ccf method=GET path=/orders/details/1 status_code=200 duration_ms=3.84
+2026-08-13 18:06:52,095 | INFO | online-shopping-api | request_completed request_id=69d79220-3328-4ceb-8408-e66d469871a4 method=POST path=/auth/login status_code=200 duration_ms=253.26
+2026-08-13 18:06:52,099 | WARNING | online-shopping-api | http_error request_id=bc9e8f8d-fad4-4061-8cff-9c571acd62fe method=GET path=/orders/details/1 status_code=403 detail=You can view only your own order
+2026-08-13 18:06:52,099 | INFO | online-shopping-api | request_completed request_id=bc9e8f8d-fad4-4061-8cff-9c571acd62fe method=GET path=/orders/details/1 status_code=403 duration_ms=2.55
+2026-08-13 18:06:52,636 | INFO | online-shopping-api | request_completed request_id=740cb225-4fd7-4785-9824-a106483a0d2d method=POST path=/auth/login status_code=200 duration_ms=245.77
+2026-08-13 18:06:52,640 | WARNING | online-shopping-api | http_error request_id=037ed583-6729-4303-b2d2-d0552d29b9b2 method=GET path=/orders/details/99999 status_code=404 detail=Order not found
+2026-08-13 18:06:52,640 | INFO | online-shopping-api | request_completed request_id=037ed583-6729-4303-b2d2-d0552d29b9b2 method=GET path=/orders/details/99999 status_code=404 duration_ms=2.26
+2026-08-13 18:06:53,178 | INFO | online-shopping-api | request_completed request_id=bbe78f86-4b02-4325-8fbf-aa7d2adfa35c method=POST path=/auth/login status_code=200 duration_ms=254.09
+2026-08-13 18:06:53,230 | INFO | online-shopping-api | request_completed request_id=72036e00-842a-445a-a4ed-7c85fb068c85 method=GET path=/orders/1 status_code=200 duration_ms=51.09
+2026-08-13 18:06:54,027 | INFO | online-shopping-api | request_completed request_id=3643b1b1-1048-4278-850c-bef853883387 method=POST path=/auth/login status_code=200 duration_ms=240.81
+2026-08-13 18:06:54,031 | WARNING | online-shopping-api | http_error request_id=f07043ad-7018-4b80-b274-0b6e3f8c8841 method=GET path=/orders/2 status_code=403 detail=You can view only your own order history
+2026-08-13 18:06:54,031 | INFO | online-shopping-api | request_completed request_id=f07043ad-7018-4b80-b274-0b6e3f8c8841 method=GET path=/orders/2 status_code=403 duration_ms=2.22
+2026-08-13 18:06:54,721 | INFO | online-shopping-api | request_completed request_id=6e4ca0a8-78a3-48d2-9219-d9b5a597d013 method=POST path=/auth/login status_code=200 duration_ms=217.89
+2026-08-13 18:06:54,767 | INFO | online-shopping-api | request_completed request_id=76a449e1-d00f-4b9e-8abb-458ccdbc6eaa method=GET path=/orders/operations/all status_code=200 duration_ms=6.72
+2026-08-13 18:06:55,600 | INFO | online-shopping-api | request_completed request_id=68f6f97f-16f8-4d19-b13a-9b38b147ce22 method=POST path=/auth/login status_code=200 duration_ms=228.89
+2026-08-13 18:06:55,604 | INFO | online-shopping-api | request_completed request_id=88a35e68-db38-40b1-97eb-4dd797364ee2 method=GET path=/orders/operations/all status_code=200 duration_ms=2.37
+2026-08-13 18:06:56,022 | INFO | online-shopping-api | request_completed request_id=6f71f952-cd05-4e28-8a3c-a4b0ffbbd1e7 method=POST path=/auth/login status_code=200 duration_ms=202.81
+2026-08-13 18:06:56,025 | WARNING | online-shopping-api | http_error request_id=0f1f9244-8b47-4379-b392-aee9b9548105 method=GET path=/orders/operations/all status_code=403 detail=Insufficient role permissions
+2026-08-13 18:06:56,025 | INFO | online-shopping-api | request_completed request_id=0f1f9244-8b47-4379-b392-aee9b9548105 method=GET path=/orders/operations/all status_code=403 duration_ms=1.86
+2026-08-13 18:06:56,687 | INFO | online-shopping-api | request_completed request_id=176d8647-4da6-4555-867b-ed5cf6c737fe method=POST path=/auth/login status_code=200 duration_ms=219.60
+2026-08-13 18:06:56,692 | INFO | online-shopping-api | request_completed request_id=415a2b7a-4a8a-43e0-aca3-47d5425d916b method=GET path=/orders/operations/1 status_code=200 duration_ms=3.03
+2026-08-13 18:06:57,148 | INFO | online-shopping-api | request_completed request_id=59cbc4f2-c5d7-476f-83fa-6c90df99f69f method=POST path=/auth/login status_code=200 duration_ms=232.28
+2026-08-13 18:06:57,200 | WARNING | online-shopping-api | http_error request_id=898c0a8c-d7aa-4086-83c8-7e18e08c75b5 method=GET path=/orders/operations/99999 status_code=404 detail=Order not found
+2026-08-13 18:06:57,200 | INFO | online-shopping-api | request_completed request_id=898c0a8c-d7aa-4086-83c8-7e18e08c75b5 method=GET path=/orders/operations/99999 status_code=404 duration_ms=50.54
+2026-08-13 18:06:57,215 | WARNING | online-shopping-api | http_error request_id=439452f6-602c-45da-a829-f225972c1e0f method=GET path=/orders/operations/all status_code=401 detail=Not authenticated
+2026-08-13 18:06:57,215 | INFO | online-shopping-api | request_completed request_id=439452f6-602c-45da-a829-f225972c1e0f method=GET path=/orders/operations/all status_code=401 duration_ms=2.74
+2026-08-13 18:08:09,281 | INFO | online-shopping-api | request_completed request_id=b617cd0b-2d2a-4d02-9f78-94faf065d24a method=GET path=/ status_code=200 duration_ms=13.64
+2026-08-13 18:08:09,587 | INFO | online-shopping-api | request_completed request_id=b88e1c12-e3e6-4b7c-973d-1dfe79161b5b method=POST path=/users/register status_code=200 duration_ms=298.43
+2026-08-13 18:08:09,891 | INFO | online-shopping-api | request_completed request_id=cb6b69fb-6b21-4ff0-9d94-e61c1c248865 method=POST path=/users/register status_code=200 duration_ms=283.18
+2026-08-13 18:08:09,894 | WARNING | online-shopping-api | http_error request_id=b53a4d97-3922-4db8-b894-eecce1364f0b method=POST path=/users/register status_code=404 detail=Email is already registered
+2026-08-13 18:08:09,894 | INFO | online-shopping-api | request_completed request_id=b53a4d97-3922-4db8-b894-eecce1364f0b method=POST path=/users/register status_code=404 duration_ms=1.90
+2026-08-13 18:08:10,150 | INFO | online-shopping-api | request_completed request_id=b21f68cc-e46c-4f71-b33a-f0743be470d5 method=POST path=/users/register status_code=200 duration_ms=241.17
+2026-08-13 18:08:10,389 | INFO | online-shopping-api | request_completed request_id=d4e0f200-9d91-45cf-94f1-8602e2c8499f method=POST path=/auth/login status_code=200 duration_ms=237.90
+2026-08-13 18:08:10,649 | INFO | online-shopping-api | request_completed request_id=f571e152-51a3-4eef-a86e-6d5bee265565 method=POST path=/users/register status_code=200 duration_ms=252.60
+2026-08-13 18:08:10,897 | WARNING | online-shopping-api | http_error request_id=74859577-0ad6-4aa4-a0f1-e7b4aab3dd7c method=POST path=/auth/login status_code=401 detail=Invalid password
+2026-08-13 18:08:10,897 | INFO | online-shopping-api | request_completed request_id=74859577-0ad6-4aa4-a0f1-e7b4aab3dd7c method=POST path=/auth/login status_code=401 duration_ms=246.77
+2026-08-13 18:08:10,914 | WARNING | online-shopping-api | http_error request_id=6893c5a3-7534-4ac4-b0ad-df70213b1b06 method=POST path=/auth/login status_code=404 detail=User not found
+2026-08-13 18:08:10,915 | INFO | online-shopping-api | request_completed request_id=6893c5a3-7534-4ac4-b0ad-df70213b1b06 method=POST path=/auth/login status_code=404 duration_ms=9.51
+2026-08-13 18:08:10,937 | WARNING | online-shopping-api | http_error request_id=f892ad52-8816-4988-bcaa-729ec9634b24 method=GET path=/cart/1 status_code=401 detail=Invalid authentication credentials
+2026-08-13 18:08:10,937 | INFO | online-shopping-api | request_completed request_id=f892ad52-8816-4988-bcaa-729ec9634b24 method=GET path=/cart/1 status_code=401 duration_ms=11.75
+2026-08-13 18:08:11,456 | INFO | online-shopping-api | request_completed request_id=21243a1b-2166-4692-87e6-c294b41e2681 method=POST path=/auth/login status_code=200 duration_ms=247.67
+2026-08-13 18:08:11,468 | INFO | online-shopping-api | request_completed request_id=4fe044db-252d-446d-aa12-f9dde13d85b0 method=POST path=/cart/add status_code=200 duration_ms=10.38
+2026-08-13 18:08:12,018 | INFO | online-shopping-api | request_completed request_id=c3f95f98-edd0-4ec8-9984-db944bce6cfd method=POST path=/auth/login status_code=200 duration_ms=296.48
+2026-08-13 18:08:12,024 | INFO | online-shopping-api | request_completed request_id=bc0da7db-1fea-4511-abd5-f63aab86087e method=POST path=/cart/add status_code=200 duration_ms=4.51
+2026-08-13 18:08:12,031 | INFO | online-shopping-api | request_completed request_id=63d5581b-f4ca-4e87-8d49-bc132e7e85eb method=POST path=/cart/add status_code=200 duration_ms=5.05
+2026-08-13 18:08:12,553 | INFO | online-shopping-api | request_completed request_id=7b10f7ac-1b65-41c5-968a-ecb293277e27 method=POST path=/auth/login status_code=200 duration_ms=247.59
+2026-08-13 18:08:12,559 | WARNING | online-shopping-api | http_error request_id=062403d6-842a-46e8-b802-96b0ac2836c4 method=POST path=/cart/add status_code=400 detail=Requested quantity exceeds available stock
+2026-08-13 18:08:12,559 | INFO | online-shopping-api | request_completed request_id=062403d6-842a-46e8-b802-96b0ac2836c4 method=POST path=/cart/add status_code=400 duration_ms=3.99
+2026-08-13 18:08:13,293 | INFO | online-shopping-api | request_completed request_id=dbd056bf-5f59-4489-a6f8-f7407fac2a47 method=POST path=/auth/login status_code=200 duration_ms=248.61
+2026-08-13 18:08:13,297 | WARNING | online-shopping-api | http_error request_id=5dedfd34-d54e-4a9f-ac9c-4fbcb627191a method=POST path=/cart/add status_code=403 detail=You can manage only your own cart
+2026-08-13 18:08:13,298 | INFO | online-shopping-api | request_completed request_id=5dedfd34-d54e-4a9f-ac9c-4fbcb627191a method=POST path=/cart/add status_code=403 duration_ms=2.76
+2026-08-13 18:08:13,793 | INFO | online-shopping-api | request_completed request_id=28084fbf-8b09-4e76-8fa9-4a0e93a7a6c0 method=POST path=/auth/login status_code=200 duration_ms=245.41
+2026-08-13 18:08:13,798 | INFO | online-shopping-api | request_completed request_id=72a67dac-e82a-4026-87aa-d29cd81ba2c1 method=GET path=/cart/1 status_code=200 duration_ms=4.05
+2026-08-13 18:08:14,594 | INFO | online-shopping-api | request_completed request_id=f7716816-477c-494c-aec0-2fc8ce6845b7 method=POST path=/auth/login status_code=200 duration_ms=240.61
+2026-08-13 18:08:14,597 | WARNING | online-shopping-api | http_error request_id=8110e5a4-3e8c-4130-a787-ddf9ca1af620 method=GET path=/cart/2 status_code=403 detail=You can view only your own cart
+2026-08-13 18:08:14,597 | INFO | online-shopping-api | request_completed request_id=8110e5a4-3e8c-4130-a787-ddf9ca1af620 method=GET path=/cart/2 status_code=403 duration_ms=2.27
+2026-08-13 18:08:15,092 | INFO | online-shopping-api | request_completed request_id=389e6030-d7cc-469b-9ba9-f6137d9f96ed method=POST path=/auth/login status_code=200 duration_ms=237.75
+2026-08-13 18:08:15,099 | INFO | online-shopping-api | request_completed request_id=6cd7d2dc-dfb1-4d7d-9f53-41fd557686fe method=PUT path=/cart/update/1 status_code=200 duration_ms=5.71
+2026-08-13 18:08:15,605 | INFO | online-shopping-api | request_completed request_id=3f034422-47be-49d4-b49c-b8c9668f5ab9 method=POST path=/auth/login status_code=200 duration_ms=243.32
+2026-08-13 18:08:15,610 | WARNING | online-shopping-api | http_error request_id=8386ed48-0c65-4dfb-9d44-2d73a0c1b409 method=PUT path=/cart/update/1 status_code=400 detail=Requested quantity exceeds available stock
+2026-08-13 18:08:15,610 | INFO | online-shopping-api | request_completed request_id=8386ed48-0c65-4dfb-9d44-2d73a0c1b409 method=PUT path=/cart/update/1 status_code=400 duration_ms=3.38
+2026-08-13 18:08:16,289 | INFO | online-shopping-api | request_completed request_id=bf408b6a-14a0-40df-b080-5d4ab4b7751d method=POST path=/auth/login status_code=200 duration_ms=219.11
+2026-08-13 18:08:16,294 | WARNING | online-shopping-api | http_error request_id=86479476-5c08-44a4-a038-53153be0b803 method=PUT path=/cart/update/1 status_code=403 detail=You can update only your own cart item
+2026-08-13 18:08:16,294 | INFO | online-shopping-api | request_completed request_id=86479476-5c08-44a4-a038-53153be0b803 method=PUT path=/cart/update/1 status_code=403 duration_ms=3.76
+2026-08-13 18:08:16,744 | INFO | online-shopping-api | request_completed request_id=2ce8424a-2106-47b6-90ad-6572b03ffad4 method=POST path=/auth/login status_code=200 duration_ms=215.48
+2026-08-13 18:08:16,749 | INFO | online-shopping-api | request_completed request_id=ffc96388-5c69-4913-8a8b-a46e53cdaf71 method=DELETE path=/cart/remove/1 status_code=200 duration_ms=3.24
+2026-08-13 18:08:17,398 | INFO | online-shopping-api | request_completed request_id=582a0ce1-9648-4e8a-ba33-1a4e1589b560 method=POST path=/auth/login status_code=200 duration_ms=213.12
+2026-08-13 18:08:17,401 | WARNING | online-shopping-api | http_error request_id=e62b4bd3-3151-4d90-b2b7-da8c51cf11e2 method=DELETE path=/cart/remove/1 status_code=403 detail=You can remove only your own cart item
+2026-08-13 18:08:17,402 | INFO | online-shopping-api | request_completed request_id=e62b4bd3-3151-4d90-b2b7-da8c51cf11e2 method=DELETE path=/cart/remove/1 status_code=403 duration_ms=2.06
+2026-08-13 18:08:17,409 | WARNING | online-shopping-api | http_error request_id=3a1ffb6f-7489-4045-8c1d-fd459b375ffa method=GET path=/cart/1 status_code=401 detail=Not authenticated
+2026-08-13 18:08:17,409 | INFO | online-shopping-api | request_completed request_id=3a1ffb6f-7489-4045-8c1d-fd459b375ffa method=GET path=/cart/1 status_code=401 duration_ms=1.10
+2026-08-13 18:08:17,422 | INFO | online-shopping-api | request_completed request_id=d5f72e46-4a07-4f36-8829-2586feea4214 method=GET path=/categories/category/list status_code=200 duration_ms=2.74
+2026-08-13 18:08:17,901 | INFO | online-shopping-api | request_completed request_id=372ffc44-d37d-4021-b77a-a591306149b2 method=POST path=/auth/login status_code=200 duration_ms=240.10
+2026-08-13 18:08:17,916 | INFO | online-shopping-api | request_completed request_id=eab5feee-845d-4bd4-8208-3605eb2d786a method=POST path=/categories/category/create status_code=200 duration_ms=4.05
+2026-08-13 18:08:18,344 | INFO | online-shopping-api | request_completed request_id=a4b5ce2a-1442-4d6c-a07d-a04d21687d29 method=POST path=/auth/login status_code=200 duration_ms=212.43
+2026-08-13 18:08:18,347 | WARNING | online-shopping-api | http_error request_id=bf713622-043a-44d8-a9c5-01036b773a99 method=POST path=/categories/category/create status_code=403 detail=Insufficient role permissions
+2026-08-13 18:08:18,347 | INFO | online-shopping-api | request_completed request_id=bf713622-043a-44d8-a9c5-01036b773a99 method=POST path=/categories/category/create status_code=403 duration_ms=1.97
+2026-08-13 18:08:18,822 | INFO | online-shopping-api | request_completed request_id=59517d33-4593-4d1c-8360-5143cc10e828 method=POST path=/auth/login status_code=200 duration_ms=207.31
+2026-08-13 18:08:18,828 | INFO | online-shopping-api | request_completed request_id=3b2f5560-9a69-4ca7-83fe-d3901a533902 method=POST path=/categories/category/create status_code=200 duration_ms=4.35
+2026-08-13 18:08:18,831 | WARNING | online-shopping-api | http_error request_id=9901f587-c9fe-4103-a603-b213f5fae362 method=POST path=/categories/category/create status_code=404 detail=Category is already registered
+2026-08-13 18:08:18,831 | INFO | online-shopping-api | request_completed request_id=9901f587-c9fe-4103-a603-b213f5fae362 method=POST path=/categories/category/create status_code=404 duration_ms=2.25
+2026-08-13 18:08:19,366 | INFO | online-shopping-api | request_completed request_id=bbc1dd33-4b93-474d-bb04-991053bda192 method=POST path=/auth/login status_code=200 duration_ms=216.74
+2026-08-13 18:08:19,372 | INFO | online-shopping-api | request_completed request_id=1c40cd5e-b1f4-4115-be7e-92775d1baffa method=PUT path=/categories/category/update/1 status_code=200 duration_ms=4.06
+2026-08-13 18:08:19,827 | INFO | online-shopping-api | request_completed request_id=a1998d1f-5807-4fd0-bf85-85679abda3d3 method=POST path=/auth/login status_code=200 duration_ms=211.61
+2026-08-13 18:08:19,831 | WARNING | online-shopping-api | http_error request_id=a01477ff-fc91-4440-82d6-2a2bbe27e80d method=PUT path=/categories/category/update/1 status_code=403 detail=Insufficient role permissions
+2026-08-13 18:08:19,831 | INFO | online-shopping-api | request_completed request_id=a01477ff-fc91-4440-82d6-2a2bbe27e80d method=PUT path=/categories/category/update/1 status_code=403 duration_ms=2.03
+2026-08-13 18:08:20,273 | INFO | online-shopping-api | request_completed request_id=f1988bc8-3856-468b-93ff-724444429d07 method=POST path=/auth/login status_code=200 duration_ms=220.96
+2026-08-13 18:08:20,277 | WARNING | online-shopping-api | http_error request_id=6754460c-bc52-4702-b48d-e62f981dc4d8 method=PUT path=/categories/category/update/1 status_code=409 detail=Category is already registered
+2026-08-13 18:08:20,278 | INFO | online-shopping-api | request_completed request_id=6754460c-bc52-4702-b48d-e62f981dc4d8 method=PUT path=/categories/category/update/1 status_code=409 duration_ms=2.56
+2026-08-13 18:08:20,738 | INFO | online-shopping-api | request_completed request_id=0fd6846f-0d3e-4f72-8439-56a8d153b513 method=POST path=/auth/login status_code=200 duration_ms=232.56
+2026-08-13 18:08:20,743 | WARNING | online-shopping-api | http_error request_id=97c699fa-5121-4225-aaec-8010b27cd66d method=PUT path=/categories/category/update/99999 status_code=404 detail=Category not found
+2026-08-13 18:08:20,743 | INFO | online-shopping-api | request_completed request_id=97c699fa-5121-4225-aaec-8010b27cd66d method=PUT path=/categories/category/update/99999 status_code=404 duration_ms=3.31
+2026-08-13 18:08:21,161 | INFO | online-shopping-api | request_completed request_id=34c2bc7a-c434-4d88-9227-c6bc26a726d6 method=POST path=/auth/login status_code=200 duration_ms=203.90
+2026-08-13 18:08:21,164 | INFO | online-shopping-api | request_completed request_id=176f8f3e-b576-4d95-8370-14514f3dcb5f method=POST path=/categories/category/create status_code=422 duration_ms=2.10
+2026-08-13 18:08:21,587 | INFO | online-shopping-api | request_completed request_id=5fe57b01-479e-4af2-8023-1c111c74b419 method=POST path=/auth/login status_code=200 duration_ms=205.34
+2026-08-13 18:08:21,599 | INFO | online-shopping-api | request_completed request_id=8758ebc7-cdcb-4825-a15a-bcfe7d3de883 method=POST path=/orders/checkout status_code=200 duration_ms=10.34
+2026-08-13 18:08:22,031 | INFO | online-shopping-api | request_completed request_id=ea51c7d3-866a-474f-907c-e65d6983abd4 method=POST path=/auth/login status_code=200 duration_ms=216.52
+2026-08-13 18:08:22,034 | WARNING | online-shopping-api | http_error request_id=f904613c-c32c-48e6-b2aa-3c4d4f93d8bf method=POST path=/orders/checkout status_code=400 detail=Cart is empty
+2026-08-13 18:08:22,035 | INFO | online-shopping-api | request_completed request_id=f904613c-c32c-48e6-b2aa-3c4d4f93d8bf method=POST path=/orders/checkout status_code=400 duration_ms=2.29
+2026-08-13 18:08:22,458 | INFO | online-shopping-api | request_completed request_id=cd869d4d-bb49-49f3-bf44-06df52fe5179 method=POST path=/auth/login status_code=200 duration_ms=206.57
+2026-08-13 18:08:22,462 | WARNING | online-shopping-api | http_error request_id=d2914e8c-97ba-41b3-b392-f143b5f1face method=POST path=/orders/checkout status_code=400 detail=Insufficient stock for product 1. Available quantity: 1
+2026-08-13 18:08:22,462 | INFO | online-shopping-api | request_completed request_id=d2914e8c-97ba-41b3-b392-f143b5f1face method=POST path=/orders/checkout status_code=400 duration_ms=2.80
+2026-08-13 18:08:22,889 | INFO | online-shopping-api | request_completed request_id=bcc5b0aa-8b97-411c-ae3a-0bfe70f4aefd method=POST path=/auth/login status_code=200 duration_ms=213.09
+2026-08-13 18:08:22,894 | WARNING | online-shopping-api | http_error request_id=28252a0c-a22b-41b0-b62a-f4ed9c6bade0 method=POST path=/orders/checkout status_code=404 detail=Product 1 is unavailable and cannot be ordered
+2026-08-13 18:08:22,894 | INFO | online-shopping-api | request_completed request_id=28252a0c-a22b-41b0-b62a-f4ed9c6bade0 method=POST path=/orders/checkout status_code=404 duration_ms=3.45
+2026-08-13 18:08:23,549 | INFO | online-shopping-api | request_completed request_id=a99885be-0a62-44e1-b05a-1d75818ecc9c method=POST path=/auth/login status_code=200 duration_ms=206.30
+2026-08-13 18:08:23,552 | WARNING | online-shopping-api | http_error request_id=443c4874-db1f-4847-ba6a-7ac712dbbd77 method=POST path=/orders/checkout status_code=403 detail=You can place orders only for yourself
+2026-08-13 18:08:23,553 | INFO | online-shopping-api | request_completed request_id=443c4874-db1f-4847-ba6a-7ac712dbbd77 method=POST path=/orders/checkout status_code=403 duration_ms=2.22
+2026-08-13 18:08:23,974 | INFO | online-shopping-api | request_completed request_id=09090b9c-6c13-427f-a7db-d5e19e3487b6 method=POST path=/auth/login status_code=200 duration_ms=207.29
+2026-08-13 18:08:23,978 | INFO | online-shopping-api | request_completed request_id=9bfc3983-5a81-42ef-b764-f9149b4ac998 method=GET path=/orders/details/1 status_code=200 duration_ms=2.83
+2026-08-13 18:08:24,642 | INFO | online-shopping-api | request_completed request_id=bc92c674-0dd8-44f8-8b3b-84870eeb15f8 method=POST path=/auth/login status_code=200 duration_ms=202.94
+2026-08-13 18:08:24,646 | WARNING | online-shopping-api | http_error request_id=0917b03b-f5b0-4fa1-b80f-c5c44adf03a9 method=GET path=/orders/details/1 status_code=403 detail=You can view only your own order
+2026-08-13 18:08:24,646 | INFO | online-shopping-api | request_completed request_id=0917b03b-f5b0-4fa1-b80f-c5c44adf03a9 method=GET path=/orders/details/1 status_code=403 duration_ms=2.20
+2026-08-13 18:08:25,100 | INFO | online-shopping-api | request_completed request_id=1bc76d54-b8f1-47e9-ba0f-89f0d2b5a073 method=POST path=/auth/login status_code=200 duration_ms=214.01
+2026-08-13 18:08:25,103 | WARNING | online-shopping-api | http_error request_id=9af83c51-c727-4e21-bfa3-b6582b5662db method=GET path=/orders/details/99999 status_code=404 detail=Order not found
+2026-08-13 18:08:25,104 | INFO | online-shopping-api | request_completed request_id=9af83c51-c727-4e21-bfa3-b6582b5662db method=GET path=/orders/details/99999 status_code=404 duration_ms=2.57
+2026-08-13 18:08:25,530 | INFO | online-shopping-api | request_completed request_id=45552fc8-7ce4-4e31-8ab5-b270d242779f method=POST path=/auth/login status_code=200 duration_ms=213.02
+2026-08-13 18:08:25,535 | INFO | online-shopping-api | request_completed request_id=1c0507dc-67d2-47fa-9ac4-c880bce3e111 method=GET path=/orders/1 status_code=200 duration_ms=2.89
+2026-08-13 18:08:26,169 | INFO | online-shopping-api | request_completed request_id=bac1425b-406f-4552-9974-6085a84a6a45 method=POST path=/auth/login status_code=200 duration_ms=214.15
+2026-08-13 18:08:26,173 | WARNING | online-shopping-api | http_error request_id=c39049f8-483d-4bde-8235-0e13b964cb23 method=GET path=/orders/2 status_code=403 detail=You can view only your own order history
+2026-08-13 18:08:26,173 | INFO | online-shopping-api | request_completed request_id=c39049f8-483d-4bde-8235-0e13b964cb23 method=GET path=/orders/2 status_code=403 duration_ms=2.12
+2026-08-13 18:08:26,819 | INFO | online-shopping-api | request_completed request_id=32774fd7-5f80-4e6b-acb5-8dca3dfdb6a2 method=POST path=/auth/login status_code=200 duration_ms=211.13
+2026-08-13 18:08:26,823 | INFO | online-shopping-api | request_completed request_id=a2a9ac32-0276-4408-8889-ecf91e37b34e method=GET path=/orders/operations/all status_code=200 duration_ms=3.06
+2026-08-13 18:08:27,510 | INFO | online-shopping-api | request_completed request_id=0f04cf0e-8123-4c2f-a5f2-18f6e3c8c943 method=POST path=/auth/login status_code=200 duration_ms=237.78
+2026-08-13 18:08:27,516 | INFO | online-shopping-api | request_completed request_id=20af7568-3fac-4208-a436-77a861e295d6 method=GET path=/orders/operations/all status_code=200 duration_ms=3.26
+2026-08-13 18:08:27,940 | INFO | online-shopping-api | request_completed request_id=368d2cbe-7704-45e1-a642-44cdef47df5b method=POST path=/auth/login status_code=200 duration_ms=208.24
+2026-08-13 18:08:27,943 | WARNING | online-shopping-api | http_error request_id=a57ec49d-71b7-4f7d-b514-67e523b130c9 method=GET path=/orders/operations/all status_code=403 detail=Insufficient role permissions
+2026-08-13 18:08:27,943 | INFO | online-shopping-api | request_completed request_id=a57ec49d-71b7-4f7d-b514-67e523b130c9 method=GET path=/orders/operations/all status_code=403 duration_ms=2.01
+2026-08-13 18:08:28,601 | INFO | online-shopping-api | request_completed request_id=21b1aff4-6c16-4585-84e0-b048c342e740 method=POST path=/auth/login status_code=200 duration_ms=213.72
+2026-08-13 18:08:28,606 | INFO | online-shopping-api | request_completed request_id=a6c186fc-9762-4697-94ae-51ff601236c7 method=GET path=/orders/operations/1 status_code=200 duration_ms=2.97
+2026-08-13 18:08:29,116 | INFO | online-shopping-api | request_completed request_id=2de34121-e399-4718-92d6-776e5604e424 method=POST path=/auth/login status_code=200 duration_ms=242.44
+2026-08-13 18:08:29,121 | WARNING | online-shopping-api | http_error request_id=5fb8daa7-0c8c-4637-9516-159b3bdd13e0 method=GET path=/orders/operations/99999 status_code=404 detail=Order not found
+2026-08-13 18:08:29,122 | INFO | online-shopping-api | request_completed request_id=5fb8daa7-0c8c-4637-9516-159b3bdd13e0 method=GET path=/orders/operations/99999 status_code=404 duration_ms=3.94
+2026-08-13 18:08:29,131 | WARNING | online-shopping-api | http_error request_id=13f1bb32-8377-4e39-a351-defdfa8d7f27 method=GET path=/orders/operations/all status_code=401 detail=Not authenticated
+2026-08-13 18:08:29,131 | INFO | online-shopping-api | request_completed request_id=13f1bb32-8377-4e39-a351-defdfa8d7f27 method=GET path=/orders/operations/all status_code=401 duration_ms=2.17
+2026-08-13 18:08:29,149 | INFO | online-shopping-api | request_completed request_id=81e7e34f-ae82-4361-bbac-24eb408e53ff method=GET path=/products/product status_code=200 duration_ms=3.02
+2026-08-13 18:08:29,163 | INFO | online-shopping-api | request_completed request_id=ebbda336-33ec-46f1-bbce-210c5410f067 method=GET path=/products/product/1 status_code=200 duration_ms=4.55
+2026-08-13 18:08:29,175 | WARNING | online-shopping-api | http_error request_id=e50e68a7-8cc3-4bc0-a37f-3508aca0897e method=GET path=/products/product/99999 status_code=404 detail=Product not found
+2026-08-13 18:08:29,175 | INFO | online-shopping-api | request_completed request_id=e50e68a7-8cc3-4bc0-a37f-3508aca0897e method=GET path=/products/product/99999 status_code=404 duration_ms=2.23
+2026-08-13 18:08:29,193 | INFO | online-shopping-api | request_completed request_id=8f34fc79-c5e5-421d-8675-5954db40bc2b method=GET path=/products/product/search status_code=200 duration_ms=2.96
+2026-08-13 18:08:29,209 | INFO | online-shopping-api | request_completed request_id=e188ac18-351d-42d5-a86f-232476791431 method=GET path=/products/product/search status_code=200 duration_ms=2.94
+2026-08-13 18:08:29,223 | WARNING | online-shopping-api | http_error request_id=85ea5b27-343d-4729-9f7d-03bd4f8a452c method=GET path=/products/product/search status_code=404 detail=No products found
+2026-08-13 18:08:29,223 | INFO | online-shopping-api | request_completed request_id=85ea5b27-343d-4729-9f7d-03bd4f8a452c method=GET path=/products/product/search status_code=404 duration_ms=1.97
+2026-08-13 18:08:29,674 | INFO | online-shopping-api | request_completed request_id=e310359c-3444-40ec-8da2-c70c56a12fc1 method=POST path=/auth/login status_code=200 duration_ms=233.99
+2026-08-13 18:08:29,681 | INFO | online-shopping-api | request_completed request_id=2501d305-5de0-4a16-8141-b5a8fc3ad918 method=POST path=/products/products/create status_code=200 duration_ms=4.50
+2026-08-13 18:08:30,118 | INFO | online-shopping-api | request_completed request_id=d14a7ea4-dc35-4d27-8578-1f31d6ca9807 method=POST path=/auth/login status_code=200 duration_ms=217.85
+2026-08-13 18:08:30,122 | WARNING | online-shopping-api | http_error request_id=a7ac883a-b773-4c8c-8438-c481e346fc44 method=POST path=/products/products/create status_code=403 detail=Insufficient role permissions
+2026-08-13 18:08:30,122 | INFO | online-shopping-api | request_completed request_id=a7ac883a-b773-4c8c-8438-c481e346fc44 method=POST path=/products/products/create status_code=403 duration_ms=2.34
+2026-08-13 18:08:30,575 | INFO | online-shopping-api | request_completed request_id=ab62e225-4c73-470f-a0eb-d491d68ddd99 method=POST path=/auth/login status_code=200 duration_ms=232.82
+2026-08-13 18:08:30,580 | INFO | online-shopping-api | request_completed request_id=82f98aa5-9799-4fab-84f1-91ba17172afa method=POST path=/products/products/create status_code=200 duration_ms=4.42
+2026-08-13 18:08:30,586 | WARNING | online-shopping-api | http_error request_id=140154bd-0b2c-48d0-9be1-4cc96c086e04 method=POST path=/products/products/create status_code=409 detail=Product name is already registered
+2026-08-13 18:08:30,586 | INFO | online-shopping-api | request_completed request_id=140154bd-0b2c-48d0-9be1-4cc96c086e04 method=POST path=/products/products/create status_code=409 duration_ms=3.91
+2026-08-13 18:08:31,027 | INFO | online-shopping-api | request_completed request_id=92756f0a-4ee0-41c3-8059-84c2562e08d8 method=POST path=/auth/login status_code=200 duration_ms=221.59
+2026-08-13 18:08:31,033 | INFO | online-shopping-api | request_completed request_id=a28d08a0-e835-42a5-85d8-2d957b5b862d method=PUT path=/products/products/update/1 status_code=200 duration_ms=4.26
+2026-08-13 18:08:31,475 | INFO | online-shopping-api | request_completed request_id=d8928216-c194-42ec-8614-9afa59f41c92 method=POST path=/auth/login status_code=200 duration_ms=210.69
+2026-08-13 18:08:31,479 | INFO | online-shopping-api | request_completed request_id=a7b674fa-38df-4d93-9671-1bea35a060b6 method=DELETE path=/products/products/deactivate/1 status_code=200 duration_ms=2.77
+2026-08-13 18:08:31,481 | WARNING | online-shopping-api | http_error request_id=3f235f60-3b23-4558-a652-ef0475202257 method=GET path=/products/product/1 status_code=404 detail=Product not found
+2026-08-13 18:08:31,481 | INFO | online-shopping-api | request_completed request_id=3f235f60-3b23-4558-a652-ef0475202257 method=GET path=/products/product/1 status_code=404 duration_ms=1.02
+2026-08-13 21:06:04,009 | INFO | online-shopping-api | request_completed request_id=de1614f0-efc2-4635-bf6d-df4d017b3f1d method=GET path=/docs status_code=200 duration_ms=0.54
+2026-08-13 21:06:06,069 | INFO | online-shopping-api | request_completed request_id=9a6969f8-e8ca-43bd-b975-0f2c37be8e4a method=GET path=/openapi.json status_code=200 duration_ms=195.48
+2026-08-13 21:29:45,955 | INFO | online-shopping-api | request_completed request_id=fed78ab7-c793-471e-b40f-58b6e6ef3bac method=GET path=/.well-known/appspecific/com.chrome.devtools.json status_code=404 duration_ms=0.75
+2026-08-13 21:30:23,462 | INFO | online-shopping-api | request_completed request_id=7f620941-13f0-49eb-bb5c-a779ef6a3d52 method=GET path=/docs status_code=200 duration_ms=0.33
+2026-08-13 21:30:25,048 | INFO | online-shopping-api | request_completed request_id=9a021cb3-a4c3-4456-b7cb-a22a5cccd30a method=GET path=/openapi.json status_code=200 duration_ms=1.42
+2026-08-13 22:26:37,434 | INFO | online-shopping-api | request_completed request_id=3d52bf55-8474-41af-9535-6f1a11c97440 method=GET path=/products/product status_code=200 duration_ms=31.58
+2026-08-13 22:41:27,609 | INFO | online-shopping-api | request_completed request_id=059e0789-d74d-4e4f-a942-d727a6e651f1 method=GET path=/categories/category/list status_code=200 duration_ms=18.23
